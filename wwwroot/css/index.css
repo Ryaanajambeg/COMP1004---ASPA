@@ -1,0 +1,143 @@
+﻿
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #4f1d87;
+}
+.navbar-header a{
+    text-align: center;
+    font-size: 63px;
+}
+.text-muted {
+    font-size: 18px;
+    text-decoration-color: blue;
+}
+.nav-item {
+    padding: 5px;
+    list-style-type: none;
+    text-align: right;
+    background-color: black;
+    margin: 10px;
+    border-radius: 5px;
+}
+    .nav-item li {
+        display: inline;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+
+    }
+    .sidebar{
+        position: fixed;
+        left: -350px;
+        width: 300px;
+        height: 100%;
+        background: #122048;
+        transition: all .7s ease;
+        
+    }
+    .sidebar header{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        background: #4747f1;
+        user-select: none;
+
+        
+        
+    }
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 22px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+ul li:hover a {
+    padding-left: 50px;
+}
+.sidebar ul a i{
+    margin-right: 20px;
+}
+.navbar-nav{
+    text-align: center;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 4px;
+}
+label #btn{
+    left: 5px;
+    top: 120px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+
+}
+label #cancel{
+    z-index: 1111;
+    left: -235px;
+    top: 120px;
+    font-size: 30px;
+    color: #08618e;
+    padding: 4px 9px;
+    transition: all .7s ease;
+}
+#check:checked ~ .sidebar{
+    left:0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel {
+    left: 250px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+section {
+    background: url(bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s ;
+}
+
+header{
+    width: 100%;
+    height:70px;
+    font-size: 100px;
+   background: white;
+    text-align: center;
+    border-top-width: 15px;
+    border-top-color: #1087ed;
+    border-top-style: double;
+    padding-top: 10px;
+   
+}
+h1 {
+    font-family: 'Original Surfer', cursive;
+    color: #184ba7;
+    font-size: 55px;
+}
+
